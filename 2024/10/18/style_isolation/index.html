@@ -16,24 +16,25 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
   <meta name="theme-color" content="#2f4154">
-  <meta name="author" content="弓弦葉">
+  <meta name="author" content="弓弦叶">
   <meta name="keywords" content="">
   
-    <meta name="description" content="我的第一篇博客 关于窝职业学生 就读于 zjut - 浙江工业大学 技术栈HTML&#x2F;CSS JavaScript Vue.js lua 兴趣爱好足球 DOTA2 魔兽世界 炉石传说 CS2">
+    <meta name="description" content="简介 众所周知，css在web前端中具有样式控制、布局设计等重要作用。但是我们经常会遇到一个问题，就是修改一个组件的样式时会不自觉的影响到别的组件,比如说覆盖了上个已写好的背景颜色。这个问题叫做样式冲突。正因为这个问题，也就引出的这篇博客的主题-样式隔离。下面笔者就对比简介css module、tailwindcss、vue css scoped的样式隔离方案   CSS MODULE的样式隔离方">
 <meta property="og:type" content="article">
-<meta property="og:title" content="开博纪念">
-<meta property="og:url" content="http://example.com/2024/10/02/my_first_blog/index.html">
+<meta property="og:title" content="样式隔离简介">
+<meta property="og:url" content="http://example.com/2024/10/18/style_isolation/index.html">
 <meta property="og:site_name" content="Mai&#39;s blog">
-<meta property="og:description" content="我的第一篇博客 关于窝职业学生 就读于 zjut - 浙江工业大学 技术栈HTML&#x2F;CSS JavaScript Vue.js lua 兴趣爱好足球 DOTA2 魔兽世界 炉石传说 CS2">
+<meta property="og:description" content="简介 众所周知，css在web前端中具有样式控制、布局设计等重要作用。但是我们经常会遇到一个问题，就是修改一个组件的样式时会不自觉的影响到别的组件,比如说覆盖了上个已写好的背景颜色。这个问题叫做样式冲突。正因为这个问题，也就引出的这篇博客的主题-样式隔离。下面笔者就对比简介css module、tailwindcss、vue css scoped的样式隔离方案   CSS MODULE的样式隔离方">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2024-10-01T16:00:00.000Z">
-<meta property="article:modified_time" content="2024-10-02T14:05:16.024Z">
+<meta property="article:published_time" content="2024-10-18T04:26:40.000Z">
+<meta property="article:modified_time" content="2024-10-18T07:23:56.808Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="css">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>开博纪念 - Mai&#39;s blog</title>
+  <title>样式隔离简介 - Mai&#39;s blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -199,7 +200,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="开博纪念"></span>
+            <span id="subtitle" data-typed-text="样式隔离简介"></span>
           
         </div>
 
@@ -210,8 +211,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2024-10-02 00:00" pubdate>
-          October 2, 2024 am
+        <time datetime="2024-10-18 12:26" pubdate>
+          October 18, 2024 pm
         </time>
       </span>
     
@@ -222,7 +223,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          45 words
+          1.1k words
         
       </span>
     
@@ -233,7 +234,7 @@
         
         
         
-          1 mins
+          10 mins
         
       </span>
     
@@ -270,16 +271,76 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">开博纪念</h1>
+            <h1 id="seo-header">样式隔离简介</h1>
             
             
               <div class="markdown-body">
                 
-                <p>我的第一篇博客</p>
-<h2 id="关于窝"><a href="#关于窝" class="headerlink" title="关于窝"></a>关于窝</h2><h3 id="职业"><a href="#职业" class="headerlink" title="职业"></a>职业</h3><p>学生 就读于 zjut - 浙江工业大学</p>
-<h3 id="技术栈"><a href="#技术栈" class="headerlink" title="技术栈"></a>技术栈</h3><p>HTML&#x2F;CSS JavaScript Vue.js lua</p>
-<h3 id="兴趣爱好"><a href="#兴趣爱好" class="headerlink" title="兴趣爱好"></a>兴趣爱好</h3><p>足球 DOTA2 魔兽世界 炉石传说 CS2</p>
+                <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a><span style="color:#FF6F91">简介</span></h2><div style="color:#FFB7C5">
+众所周知，css在web前端中具有样式控制、布局设计等重要作用。但是我们经常会遇到一个问题，就是修改一个组件的样式时会不自觉的影响到别的组件,比如说覆盖了上个已写好的背景颜色。这个问题叫做样式冲突。正因为这个问题，也就引出的这篇博客的主题-<span style='color:yellow;font-size:20px'>样式隔离</span>。下面笔者就对比简介css module、tailwindcss、vue css scoped的样式隔离方案
+</div>
 
+<h2 id="CSS-MODULE的样式隔离方案"><a href="#CSS-MODULE的样式隔离方案" class="headerlink" title="CSS MODULE的样式隔离方案"></a><span style="color:#FF6F91">CSS MODULE的样式隔离方案</span></h2><div style="color:#FFB7C5">在一些项目中,我们常常会看到一些后缀名为.module.css的文件。笔者曾经思考过一个问题，.module.css和.css文件之间有什么区别。这个问题的答案也就指向样式隔离方案,下面我们来比较一下这两种的区别</div>
+<br>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs .css">.text-red &#123;<br>    color: red;<br>&#125;   <br></code></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs .module.css">.text-red &#123;<br>    color: red;<br>&#125;   <br></code></pre></td></tr></table></figure>
+
+<div style="color:#FFB7C5">虽然这两段代码一模一样，但是实则其作用域存在非常大的区别</div>
+<div style="color:yellow; font-size:25px">.css使用的是全局作用域，.module.css使用的是局部作用域</div>
+<div style="color:#FFB7C5">这一段话也许会让你有点启发, 我们不妨继续深挖, 在js文件中我们导入这两种不同后缀的文件也不同，例如我们在导入.css时一般这么操作</div>
+
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-keyword">import</span> ./style.<span class="hljs-property">css</span><br></code></pre></td></tr></table></figure>
+
+<div style="color:#FFB7C5">但是如果我们以同样的方法导入.module.css，就会发生错误, 正确的导入方法应该是</div>
+
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-keyword">import</span> styles <span class="hljs-keyword">from</span> ./style.<span class="hljs-property">module</span>.<span class="hljs-property">css</span><br></code></pre></td></tr></table></figure>
+
+<div style="color:#FFB7C5">在使用时也自然有不同,我们以两个简单的vue文件示例</div>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs vue">&lt;template&gt;<br>    &lt;div class=&quot;text-red&quot;&gt;123&lt;/div&gt;<br>&lt;/template&gt;<br><br>&lt;script setup&gt;<br><br>import ./style.css<br><br>&lt;/script&gt;<br></code></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs vue">&lt;template&gt;<br>    &lt;div :class=&quot;styles.text-red&quot;&gt;123&lt;/div&gt;<br>&lt;/template&gt;<br><br>&lt;script setup&gt;<br><br>import styles from ./style.module.css<br><br>&lt;/script&gt;<br></code></pre></td></tr></table></figure>
+
+<div style="color:#FFB7C5">仔细对比,我们可以大致看出,css module更像是把类名封装在了一个对象字面量里，原来的类名是对象的键。但是真正的类名是经过了加工的类名，即键指向的值，而这个值在每个组件内都有不同的识别名，css module正是通过这种方式防止与其他部分的样式冲突的</div>
+
+
+<h2 id="tailwindcss的样式隔离方案"><a href="#tailwindcss的样式隔离方案" class="headerlink" title="tailwindcss的样式隔离方案"></a><span style="color:#FF6F91">tailwindcss的样式隔离方案</span></h2><div style="color:#FFB7C5">
+众所周知, tailwindcss != css , 他是一个css框架。因此, tailwind没有提供, 也没必要提供样式隔离方案, 但是在tailwind的设计理念中包含着一定程度的样式隔离，我们可以从以下几个方面去理解
+</div>
+
+<h3 id="实用类"><a href="#实用类" class="headerlink" title="实用类"></a><span style="color:#FF6F91">实用类</span></h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&#x27;btn&#x27;</span>&gt;</span>按钮<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span><br></code></pre></td></tr></table></figure>
+<div style="color:#FFB7C5">
+在上面这一段代码中，btn就是一个实用类，一般情况下, 用户的需求都可以通过实用类得到解决，这样就可以避免用户直接修改全局样式所引起的样式冲突问题
+</div>
+
+
+
+<h3 id="即时生成"><a href="#即时生成" class="headerlink" title="即时生成"></a><span style="color:#FF6F91">即时生成</span></h3><div style="color:#FFB7C5">
+tailwindcss使用了<span style="color:yellow;font-size:25">即使生成(JIT)</span>模式，即只在使用时动态生成、编译需要的类，提高性能和效率的同时，也在一定程度上防止了样式冲突问题的发生
+</div>
+
+<h3 id="自定义样式"><a href="#自定义样式" class="headerlink" title="自定义样式"></a><span style="color:#FF6F91">自定义样式</span></h3><div style="color:#FFB7C5">开发者可以使用@apply将一系列实用类绑定到自定义的类名上，进一步封装了样式，加强了其隔离性</div>
+
+<h2 id="vue-css-scopped样式隔离方案"><a href="#vue-css-scopped样式隔离方案" class="headerlink" title="vue css scopped样式隔离方案"></a><span style="color:#FF6F91">vue css scopped样式隔离方案</span></h2><div style="color:#FFB7C5">
+在vue的style标签中添加scopped属性后，可以让组件的样式仅适用与该组件而不影响其他组件，以此来达到样式隔离的效果
+</div>  
+
+<h3 id="原理"><a href="#原理" class="headerlink" title="原理"></a><span style="color:#FF6F91">原理</span></h3><div style="color:#FFB7C5">
+与css module类似，使用scopped属性后，vue会为每个css选择器添加一个独特的属性，确保不会被其他组件影响
+</div>  
+<div style="color:#FFB7C5">
+例如
+</div>  
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs vue">&lt;style scoped&gt;<br>.my-component &#123;<br>    background-color: lightblue;<br>    color: white;<br>&#125;<br>&lt;/style&gt;<br></code></pre></td></tr></table></figure>
+<div style="color:#FFB7C5">.my-component 可能会被转换为 .my-component[data-v-xxxxxx], 也就不会被全局样式所影响</div>
+
+<h2 id="作用"><a href="#作用" class="headerlink" title="作用"></a><span style="color:#FF6F91">作用</span></h2><div style="color:#FFB7C5">除了解决简述中的样式冲突问题, 样式隔离还有显式的好处</div>
+
+<h3 id="提高可维护性"><a href="#提高可维护性" class="headerlink" title="提高可维护性"></a><span style="color:#FF6F91">提高可维护性</span></h3><div style="color:#FFB7C5">传统的全局css样式往往是牵一发而动一身的，这给代码维护造成了很大的麻烦，而隔离了样式之后就能避免这一问题</div>
+
+<h3 id="增强复用性"><a href="#增强复用性" class="headerlink" title="增强复用性"></a><span style="color:#FF6F91">增强复用性</span></h3><div style="color:#FFB7C5">复用是前端领域非常重要的一块，而样式隔离可以让复用组件的成本更低</div>
+
+<h3 id="团队协作"><a href="#团队协作" class="headerlink" title="团队协作"></a><span style="color:#FF6F91">团队协作</span></h3><div style="color:#FFB7C5">团队的不同成员可能会同时修改样式，样式隔离可以很好解决这个问题</div>
                 
               </div>
             
@@ -287,6 +348,13 @@
             <div>
               <div class="post-metas my-3">
   
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/css/" class="print-no-link">#css</a>
+      
+    </div>
   
 </div>
 
@@ -296,20 +364,20 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>开博纪念</div>
-      <div>http://example.com/2024/10/02/my_first_blog/</div>
+      <div>样式隔离简介</div>
+      <div>http://example.com/2024/10/18/style_isolation/</div>
     </div>
     <div class="license-meta">
       
         <div class="license-meta-item">
           <div>Author</div>
-          <div>弓弦葉</div>
+          <div>弓弦叶</div>
         </div>
       
       
         <div class="license-meta-item license-meta-date">
           <div>Posted on</div>
-          <div>October 2, 2024</div>
+          <div>October 18, 2024</div>
         </div>
       
       
@@ -341,15 +409,15 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2024/10/18/style_isolation/" title="样式隔离简介">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">样式隔离简介</span>
-                        <span class="visible-mobile">Previous</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
+                    
+                      <a href="/2024/10/02/my_first_blog/" title="开博纪念">
+                        <span class="hidden-mobile">开博纪念</span>
+                        <span class="visible-mobile">Next</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
                     
                   </article>
                 </div>
