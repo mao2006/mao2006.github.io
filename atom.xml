@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Mai&#39;s blog</title>
+  <icon>https://imjh.xyz/icon.png</icon>
+  
+  <link href="https://imjh.xyz/atom.xml" rel="self"/>
+  
+  <link href="https://imjh.xyz/"/>
+  <updated>2025-03-25T10:56:02.441Z</updated>
+  <id>https://imjh.xyz/</id>
+  
+  <author>
+    <name>弓弦叶</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>深入理解fetch api(1) --基础用法</title>
+    <link href="https://imjh.xyz/2024/10/20/fetch_api/"/>
+    <id>https://imjh.xyz/2024/10/20/fetch_api/</id>
+    <published>2024-10-20T02:45:10.000Z</published>
+    <updated>2025-03-25T10:56:02.441Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;div</summary>
+        
+      
+    
+    
+    
+    
+    <category term="js" scheme="https://imjh.xyz/tags/js/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>样式隔离简介</title>
+    <link href="https://imjh.xyz/2024/10/18/style_isolation/"/>
+    <id>https://imjh.xyz/2024/10/18/style_isolation/</id>
+    <published>2024-10-18T04:26:40.000Z</published>
+    <updated>2025-03-25T10:56:02.441Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;&lt;span style=&quot;color:#FF6F91&quot;&gt;简介&lt;/span&gt;&lt;/h2&gt;&lt;div</summary>
+        
+      
+    
+    
+    
+    
+    <category term="css" scheme="https://imjh.xyz/tags/css/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>开博纪念</title>
+    <link href="https://imjh.xyz/2024/10/02/my_first_blog/"/>
+    <id>https://imjh.xyz/2024/10/02/my_first_blog/</id>
+    <published>2024-10-01T16:00:00.000Z</published>
+    <updated>2025-03-25T10:56:02.441Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;我的第一篇博客&lt;/p&gt;
+&lt;h2 id=&quot;关于窝&quot;&gt;&lt;a href=&quot;#关于窝&quot; class=&quot;headerlink&quot; title=&quot;关于窝&quot;&gt;&lt;/a&gt;关于窝&lt;/h2&gt;&lt;h3 id=&quot;职业&quot;&gt;&lt;a href=&quot;#职业&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>
