@@ -1,0 +1,687 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/avatar.jpg">
+  <link rel="icon" href="/img/avatar.jpg">
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="blues">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="[闲谈] 从失速到重启：我的半年记录嘿，好久不见。 上次更新定格在了10.20  讲述的主题还是fetch api的基础用法 结果半年过去了 文章始终难产 上篇文章末的’未完待续‘现在看来有点像是一种讽刺 对我来说 这半年 说是沉淀 其实更像是一种失速  从上学期的4u项目搁浅开始 我一度觉得自己的生活被按下了暂停键 但好在 最近论坛项目的重启 带着我重新按下了启动键 这一篇就当作和老朋友的闲聊，">
+<meta property="og:type" content="article">
+<meta property="og:title" content="[闲谈] 从失速到重启：我的半年记录">
+<meta property="og:url" content="https://imjh.xyz/2025/05/14/[%E9%97%B2%E8%B0%88]%20%E4%BB%8E%E5%A4%B1%E9%80%9F%E5%88%B0%E9%87%8D%E5%90%AF%EF%BC%9A%E6%88%91%E7%9A%84%E5%8D%8A%E5%B9%B4%E8%AE%B0%E5%BD%95%201f396d896eb78011908be91390e5aa4f/index.html">
+<meta property="og:site_name" content="Mai&#39;s blog">
+<meta property="og:description" content="[闲谈] 从失速到重启：我的半年记录嘿，好久不见。 上次更新定格在了10.20  讲述的主题还是fetch api的基础用法 结果半年过去了 文章始终难产 上篇文章末的’未完待续‘现在看来有点像是一种讽刺 对我来说 这半年 说是沉淀 其实更像是一种失速  从上学期的4u项目搁浅开始 我一度觉得自己的生活被按下了暂停键 但好在 最近论坛项目的重启 带着我重新按下了启动键 这一篇就当作和老朋友的闲聊，">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://imjh.xyz/%5B%E9%97%B2%E8%B0%88%5D%20%E4%BB%8E%E5%A4%B1%E9%80%9F%E5%88%B0%E9%87%8D%E5%90%AF%EF%BC%9A%E6%88%91%E7%9A%84%E5%8D%8A%E5%B9%B4%E8%AE%B0%E5%BD%95%201f396d896eb78011908be91390e5aa4f/image.png">
+<meta property="article:published_time" content="2025-05-14T07:00:00.000Z">
+<meta property="article:modified_time" content="2025-05-14T07:01:26.663Z">
+<meta property="article:author" content="弓弦叶">
+<meta property="article:tag" content="个人成长">
+<meta property="article:tag" content="前端开发">
+<meta property="article:tag" content="闲聊">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://imjh.xyz/%5B%E9%97%B2%E8%B0%88%5D%20%E4%BB%8E%E5%A4%B1%E9%80%9F%E5%88%B0%E9%87%8D%E5%90%AF%EF%BC%9A%E6%88%91%E7%9A%84%E5%8D%8A%E5%B9%B4%E8%AE%B0%E5%BD%95%201f396d896eb78011908be91390e5aa4f/image.png">
+  
+  
+  
+  <title>[闲谈] 从失速到重启：我的半年记录 - Mai&#39;s blog</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1749284_5i9bdhy70f8.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"imjh.xyz","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="Mai's blog" type="application/atom+xml">
+</head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Mai&#39;s blog</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>主页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于我</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/" target="_self">
+                <i class="iconfont icon-link-fill"></i>
+                <span>友链</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="[闲谈] 从失速到重启：我的半年记录"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2025-05-14 15:00" pubdate>
+          May 14, 2025 pm
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          1.9k words
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          16 mins
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">[闲谈] 从失速到重启：我的半年记录</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h1 id="闲谈-从失速到重启：我的半年记录"><a href="#闲谈-从失速到重启：我的半年记录" class="headerlink" title="[闲谈] 从失速到重启：我的半年记录"></a>[闲谈] 从失速到重启：我的半年记录</h1><p>嘿，好久不见。</p>
+<p>上次更新定格在了10.20  讲述的主题还是fetch api的基础用法 结果半年过去了 文章始终难产 上篇文章末的’未完待续‘现在看来有点像是一种讽刺</p>
+<p>对我来说 这半年 说是沉淀 其实更像是一种失速 </p>
+<p>从上学期的4u项目搁浅开始 我一度觉得自己的生活被按下了暂停键</p>
+<p>但好在 最近论坛项目的重启 带着我重新按下了启动键</p>
+<p>这一篇就当作和老朋友的闲聊，聊聊我这半年经历了些什么。 </p>
+<h1 id="失速的几个月：为何按下暂停键"><a href="#失速的几个月：为何按下暂停键" class="headerlink" title="失速的几个月：为何按下暂停键"></a>失速的几个月：为何按下暂停键</h1><p>大概是半年前吧 4u项目还在如火如荼的进行 我像发了疯一样的push同事 同时也push着自己</p>
+<p>刚刚通过了面试 加入精弘 完成试用期作业 猛刷任务版的我  期待的就是这么一个<strong>机会</strong></p>
+<p>我很想通过这个<strong>机会</strong> 巩固我的技术 为培育我的精弘出一份力</p>
+<p>更重要的是 我想证明我有<strong>独当一面</strong>的能力 所以我的目标是单挑完成管理端的前端开发</p>
+<p>事情在某一天突然发生了变化</p>
+<p>因为一些不可抗因素 4u项目在某几天突然宣布全面搁浅</p>
+<p>我的最后一个commit 伴随那个无所不能的我 定格在了</p>
+<p><img src="/%5B%E9%97%B2%E8%B0%88%5D%20%E4%BB%8E%E5%A4%B1%E9%80%9F%E5%88%B0%E9%87%8D%E5%90%AF%EF%BC%9A%E6%88%91%E7%9A%84%E5%8D%8A%E5%B9%B4%E8%AE%B0%E5%BD%95%201f396d896eb78011908be91390e5aa4f/image.png" srcset="/img/loading.gif" lazyload alt="image.png"></p>
+<p>那一周对我来说是无比痛苦的 但是也不能怪部长和前辈们 这件事情完全就是学校的失职</p>
+<p>虽然后面仍然有不少项目在持续推进 但是我总感觉 自己的效率变得一塌糊涂</p>
+<p>在前端的探索上也变得很被动 似乎是被强行带着走</p>
+<p>这也就是 从2024.10.20 到最近 我博客停更的一个很大的原因</p>
+<h1 id="失速期的进步：环境迁移与-React-初探"><a href="#失速期的进步：环境迁移与-React-初探" class="headerlink" title="失速期的进步：环境迁移与 React 初探"></a><strong>失速期的进步：环境迁移与 React 初探</strong></h1><p>虽然那段时间看似停滞不前，但我还是抓住了一些契机，尝试从技术层面重新调整自己。</p>
+<h2 id="开发环境的迁移"><a href="#开发环境的迁移" class="headerlink" title="开发环境的迁移"></a>开发环境的迁移</h2><p>起初，我在 Windows 环境下开发还算顺利。</p>
+<p>但是有一天，我有了真机调试的需求。</p>
+<p>Windows 环境下的 Vite 服务器总让我头疼。页面加载不出来，控制台各种报错，甚至连刷新页面都能卡死。</p>
+<p>折腾了一整天，从改配置到重启网络，折腾了无数次，结果还是不稳定。</p>
+<p>调来调去，我终于意识到，这不是简单的配置问题，而是 <strong>网络环境和代理设置</strong> 的锅。</p>
+<p>所以，我决定换个更稳定、更适合开发的系统：Ubuntu。</p>
+<p>然而，这也导致了我这条懒狗 <strong>一直没把博客迁移到新环境</strong>，于是就这样一拖再拖，直到最近。</p>
+<h2 id="技术栈的拓展"><a href="#技术栈的拓展" class="headerlink" title="技术栈的拓展"></a>技术栈的拓展</h2><p>就在我逐渐适应 Ubuntu 的时候，一个新的机会出现了。</p>
+<p>我找到了一家小公司做线上实习，他们的技术栈是 React。之前我一直在用 Vue，对 React 的了解几乎停留在“它是个前端框架”这种程度。</p>
+<p>刚开始接触 React，我觉得和 Vue 没什么区别。但当我真正深入了解它的时候，我才发现，React 的理念远比我想象的要复杂。</p>
+<p>我发现 React 更像是一辆 <strong>手动挡汽车</strong>，许多 Vue 帮你封装好的优化逻辑，在 React 里都需要你手动处理，比如渲染优化等。</p>
+<p>Hooks 模式则让我意识到，状态管理原来可以这么灵活。</p>
+<p>对Fiber 架构的初步涉猎 让我对前端渲染的认知上了一个新的台阶，同时也对<strong>前端的深度</strong>多了一分敬畏。</p>
+<p>所以，这段失速期对我来说，也是一个积累新技术、转变开发思路的过程。</p>
+<h1 id="找回节奏：如何重新按下播放键"><a href="#找回节奏：如何重新按下播放键" class="headerlink" title="找回节奏：如何重新按下播放键"></a>找回节奏：如何重新按下播放键</h1><p>失速期讲了很多 但是当你们看到这篇文章的时候 也代表着 那个无所不能的我 似乎回来了</p>
+<p>很幸运 众多契机叠加在了一起 让我走出了这段低谷</p>
+<p>最重要的 当然是<strong>精弘论坛</strong>的启动 ****作为之前精弘的明星产品 这是一个学习的好机会 更是一个证明的好机会 强烈的渴望让我的齿轮再次启动 不断学习 不断工作 不断优化 不断进步</p>
+<p>如果你也是精弘的一份子 是我的同事 是项目组的成员的话</p>
+<blockquote>
+<p><strong>做好准备</strong></p>
+</blockquote>
+<p>同时 我的感情似乎也有了一定的进展 这种奇妙的感觉让我不再是一只鹌鹑 不过现在还是发展阶段 我也不好多透露什么 (如果你是我的身边的人 别问我 问了我也不会告诉你)</p>
+<p>这让我获得了前所未有的自信</p>
+<p>然后就是 即将到来的改选 和 部长团选举</p>
+<p>这是个沉重的话题 改选意味着 越来越多的前辈会离开我们 为生活奔忙</p>
+<p>而部长团选举意味着 要展示自己的实力 赢得留在精弘的机会 也进一步代表了可用人手的减少</p>
+<p>这样的压力如潮水一般  推动着我前进</p>
+<p>这些恰到好处的契机 让我似乎重新回到了正轨 回到了去年秋天 回到了上学期的期中考试前后</p>
+<h1 id="展望未来：工作与学习探索"><a href="#展望未来：工作与学习探索" class="headerlink" title="展望未来：工作与学习探索"></a>展望未来：工作与学习探索</h1><p>前面说到 最近的契机让我重回正轨 这也让我找到了新的方向</p>
+<p>在工作方面，我希望以 <strong>半个 Owner 的身份</strong> 推进论坛项目开发，承担更多模块化设计和前端优化的工作，让论坛从功能实现到用户体验都有质的提升。</p>
+<p>同时，我也计划积极准备部长团的面试，继续为精弘网络贡献自己的力量。</p>
+<p>学习方面，接下来的两个月，我计划集中学习 Webpack 构建优化，深入理解其插件机制、模块打包原理，力求提升项目的构建效率。同时，我会同步学习 Next.js，通过研究它的 SSR 和 ISR 实现，来进一步理解前端框架的底层运作。</p>
+<p>同时，我还准备系统化学习框架实现原理，包括路由、状态管理、虚拟 DOM 等模块，尝试从源码角度重新构建一个迷你框架。</p>
+<p>希望这些能为未来的求职打下良好的基础。</p>
+<p>接下来两个月，我还打算在博客上补上之前欠下的 Fetch API 进阶应用。虽然这篇未完待续已经拖了半年，但我依然会坚持写完。不过，由于当前项目和学习任务较重，预计更新会稍微延迟，还请耐心等待。</p>
+<h1 id="写在最后：重新定义这片空白期"><a href="#写在最后：重新定义这片空白期" class="headerlink" title="写在最后：重新定义这片空白期"></a><strong>写在最后：重新定义这片空白期</strong></h1><p>这半年，看似空白，却也在我的心里留下了新的起点。失速并不可怕，关键是如何找到重启的契机。</p>
+<p>对我来说，项目开发和技术写作，就是我重新按下播放键的动力源。</p>
+<p>接下来的博客内容，我会继续写技术、写项目，也会多写写我这半年的思考。</p>
+<p>毕竟，<strong>空白</strong>也是一种记录。</p>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/%E4%B8%AA%E4%BA%BA%E6%88%90%E9%95%BF/" class="print-no-link">#个人成长</a>
+      
+        <a href="/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/" class="print-no-link">#前端开发</a>
+      
+        <a href="/tags/%E9%97%B2%E8%81%8A/" class="print-no-link">#闲聊</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>[闲谈] 从失速到重启：我的半年记录</div>
+      <div>https://imjh.xyz/2025/05/14/[闲谈] 从失速到重启：我的半年记录 1f396d896eb78011908be91390e5aa4f/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>Author</div>
+          <div>blues</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>Posted on</div>
+          <div>May 14, 2025</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>Licensed under</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - Attribution">
+                    <i class="iconfont icon-cc-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2024/10/20/fetch_api/" title="深入理解fetch api(1) --基础用法">
+                        <span class="hidden-mobile">深入理解fetch api(1) --基础用法</span>
+                        <span class="visible-mobile">Next</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>Table of Contents</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Search</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">Keyword</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/5.0.0/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">Blog works best with JavaScript enabled</div>
+  </noscript>
+</body>
+</html>
