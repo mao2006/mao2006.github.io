@@ -6,7 +6,7 @@
   <link href="https://imjh.xyz/atom.xml" rel="self"/>
   
   <link href="https://imjh.xyz/"/>
-  <updated>2025-05-15T09:17:56.797Z</updated>
+  <updated>2025-05-19T10:44:51.284Z</updated>
   <id>https://imjh.xyz/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>别让副作用“爆炸”你的代码！——一次CR后的深度反思</title>
+    <link href="https://imjh.xyz/2025/05/19/side-effect/"/>
+    <id>https://imjh.xyz/2025/05/19/side-effect/</id>
+    <published>2025-05-19T10:43:12.000Z</published>
+    <updated>2025-05-19T10:44:51.284Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;前情提要&quot;&gt;&lt;a href=&quot;#前情提要&quot; class=&quot;headerlink&quot; title=&quot;前情提要&quot;&gt;&lt;/a&gt;前情提要&lt;/h1&gt;&lt;p&gt;笔者下午在code review一个新手的代码时</summary>
+        
+      
+    
+    
+    
+    <category term="前端开发" scheme="https://imjh.xyz/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="实战" scheme="https://imjh.xyz/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/%E5%AE%9E%E6%88%98/"/>
+    
+    
+    <category term="前端开发" scheme="https://imjh.xyz/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="副作用" scheme="https://imjh.xyz/tags/%E5%89%AF%E4%BD%9C%E7%94%A8/"/>
+    
+  </entry>
   
   <entry>
     <title>Webpack初体验：基础配置</title>
@@ -79,7 +108,7 @@
     <link href="https://imjh.xyz/2024/10/20/fetch_api/"/>
     <id>https://imjh.xyz/2024/10/20/fetch_api/</id>
     <published>2024-10-20T02:45:10.000Z</published>
-    <updated>2025-05-14T07:01:17.151Z</updated>
+    <updated>2025-05-19T10:48:05.542Z</updated>
     
     
       
