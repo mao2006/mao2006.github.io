@@ -1,0 +1,710 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/avatar.jpg">
+  <link rel="icon" href="/img/avatar.jpg">
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="blues">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="思考的起点：一场有关技术选型的喧哗最近，我们论坛团队围绕 CSS 技术选型爆发了一场少有的激烈分歧，成员们很快就分成了泾渭分明的两派： 一派是“守旧派”，坚持继续沿用传统 CSS 的写法，觉得这样最稳妥、最省事； 另一派，则包括我在内的“维新派”，坚信顺应行业潮流，选择Tailwind CSS（下简称 tw）才能最大化提升效率。 其实，这场争论如今已经尘埃落定，团队今晚也正式敲定了最终的选型方案。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="[闲谈]一次团队争论所想到的：技术之外的困境">
+<meta property="og:url" content="https://imjh.xyz/2025/05/22/dispute-and-think/index.html">
+<meta property="og:site_name" content="Mai&#39;s blog">
+<meta property="og:description" content="思考的起点：一场有关技术选型的喧哗最近，我们论坛团队围绕 CSS 技术选型爆发了一场少有的激烈分歧，成员们很快就分成了泾渭分明的两派： 一派是“守旧派”，坚持继续沿用传统 CSS 的写法，觉得这样最稳妥、最省事； 另一派，则包括我在内的“维新派”，坚信顺应行业潮流，选择Tailwind CSS（下简称 tw）才能最大化提升效率。 其实，这场争论如今已经尘埃落定，团队今晚也正式敲定了最终的选型方案。">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2025-05-21T17:08:00.000Z">
+<meta property="article:modified_time" content="2025-05-21T17:09:33.545Z">
+<meta property="article:author" content="弓弦叶">
+<meta property="article:tag" content="前端开发">
+<meta property="article:tag" content="闲谈">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+  
+  <title>[闲谈]一次团队争论所想到的：技术之外的困境 - Mai&#39;s blog</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1749284_5i9bdhy70f8.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"imjh.xyz","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="Mai's blog" type="application/atom+xml">
+</head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Mai&#39;s blog</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>主页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于我</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/" target="_self">
+                <i class="iconfont icon-link-fill"></i>
+                <span>友链</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="[闲谈]一次团队争论所想到的：技术之外的困境"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2025-05-22 01:08" pubdate>
+          May 22, 2025 am
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          1.9k words
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          17 mins
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">[闲谈]一次团队争论所想到的：技术之外的困境</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h1 id="思考的起点：一场有关技术选型的喧哗"><a href="#思考的起点：一场有关技术选型的喧哗" class="headerlink" title="思考的起点：一场有关技术选型的喧哗"></a>思考的起点：一场有关技术选型的喧哗</h1><p>最近，我们论坛团队围绕 CSS 技术选型爆发了一场少有的激烈分歧，成员们很快就分成了泾渭分明的两派：</p>
+<p>一派是“守旧派”，坚持继续沿用<strong>传统 CSS 的写法</strong>，觉得这样最稳妥、最省事；</p>
+<p>另一派，则包括我在内的“维新派”，坚信顺应行业潮流，选择<strong>Tailwind CSS（下简称 tw）</strong>才能最大化提升效率。</p>
+<p>其实，这场争论如今已经尘埃落定，团队今晚也正式敲定了最终的选型方案。</p>
+<p>但热闹过后，我却迟迟难以入睡。比起选型结果本身，这场争论激起的思考反而在脑海里挥之不去——它早已不是一场单纯的“用什么技术”之争。</p>
+<p><strong>事先声明：我是个很主观的人。如果你觉得这篇文章会攻击到你，那他大概率就会，你可以点击窗口右上角退出。</strong></p>
+<h1 id="回到争论本身：分歧的根源是什么"><a href="#回到争论本身：分歧的根源是什么" class="headerlink" title="回到争论本身：分歧的根源是什么"></a>回到争论本身：分歧的根源是什么</h1><p>让我们再冷静地回顾一下，这次分歧到底是怎么产生的，尝试从两方的视角理理思路。</p>
+<p><strong>首先，为什么我和部长们会坚定地选择 Tailwind？</strong></p>
+<ul>
+<li>最近我们大部分时间都投入在问卷项目，而这个项目本身就是基于 Tailwind 搭建的。</li>
+<li>不论是部门里的实习经历，还是我们个人参与的线上实习，几乎都在使用 Tailwind。</li>
+</ul>
+<p>说白了，对我们这群“维新派”来说，Tailwind 已经成了新的<strong>舒适区</strong>。用惯了它的便捷和高效，再让我们回头写传统 CSS，真的像是让骑惯了电动车的人重回二八大杠，自然会觉得效率大打折扣，甚至有点“折磨”。</p>
+<p><strong>再来看“守旧派”为什么会坚持传统 CSS。</strong></p>
+<p>坦白说，我很主观，所以只能凭自己的观察和揣测总结，如果与事实不符，欢迎来杠，但不保证我会改想法。</p>
+<p>比如，有人说：</p>
+<blockquote>
+<p>“css module 的 @apply 语法彻底剥夺了 Tailwind 的优势。”</p>
+</blockquote>
+<p>在我看来，这理由挺牵强的。但继续听下去，出现了这样的说法：</p>
+<blockquote>
+<p>“写了一周 Tailwind，根本看不懂。”</p>
+</blockquote>
+<p>这下我算是明白了：对一部分同学来说，Tailwind 最大的门槛，其实不是技术细节，而是<strong>陌生感和惯性带来的不适</strong>。</p>
+<p>说到底，Tailwind 的优势绝不止于“省事”两个字。它的语法糖、极简类名、响应式与状态一体化写法，确实极大提升了开发效率，这也是为什么越来越多大厂和主流项目都转向了 Tailwind。</p>
+<p>争论还在继续，理由也五花八门——</p>
+<p>有调侃：“就拉就拉，再不给 scss 拉票，下一届前端小登见了就跑！”</p>
+<p>有担忧：“你们再加码下去，那就没人了。”</p>
+<p>甚至还有新人直接喊：“吃不消，Tw太难了[流泪]！”</p>
+<p>但说实话，这些担心在我看来多少有点“过虑”——</p>
+<p>我自己做完试用期大作业，第一次接触团队项目就是用 Tailwind 实现一键全局黑夜模式。</p>
+<p>那会儿我还什么都不懂，面对 Tw 没有畏惧，反而是觉得——</p>
+<blockquote>
+<p>“原来实现一个黑夜模式，这么轻松！写样式原来也能这么清晰、舒服、高效！”</p>
+</blockquote>
+<p>所以从我的角度看，“守旧派”的根本出发点，更多是<strong>不想跳出自己的舒适区</strong>。当然，也有兄弟很有性格，说自己单纯不喜欢 <code>-</code> 这种写法，这种原因实在让人忍俊不禁。</p>
+<p>但冷静下来想，其实每个人的选择背后，都是在维护让自己最舒服、最安全的习惯。</p>
+<p>只不过，在新旧交替、技术快速迭代的今天，<strong>我们是否该警惕，自己的“舒适区”是不是早已悄悄变成了“惰性区”？</strong></p>
+<p>我们抗拒新东西，是真的难，还是只是懒得去试？我们坚守传统，是技术判断，还是习惯和惰性的合谋？</p>
+<p>每当想明白这些问题的时候，我都会有些后怕：</p>
+<p><strong>如果有一天，我也成为了那个拒绝变化、抵触新工具、用情怀自洽的人怎么办？</strong></p>
+<p>争论到这里，似乎已经不只是“用什么写样式”那么简单了，而是直指每一个开发者在成长路上迟早都会遇到的那个关口。</p>
+<h1 id="走出争论：更深的个人思考"><a href="#走出争论：更深的个人思考" class="headerlink" title="走出争论：更深的个人思考"></a>走出争论：更深的个人思考</h1><p>争论结束后，我反而越想越清醒——比技术路线本身更让我在意的，其实是分歧背后暴露出来的人性惯性。</p>
+<p>说白了，这种选型争吵，就是每个人对安全感、效率感和舒适区的不同追求。</p>
+<p>有人觉得新技术风险大、怕踩坑，觉得“守旧”能让自己少出错、少折腾；但对我和一些部长来说，Tailwind 已经成了新的效率武器，让我们轻松如鱼得水。此时让我们回头用传统 CSS，真有种“倒退进化”的憋屈。</p>
+<p>归根结底，所有“坚持”其实都是一种自我保护，是“我只想过好我会的那一套生活”。</p>
+<p>最危险的是，这种本能的抗拒变化，会被合理化，渐渐变成“技术保守”的借口，甚至被包装成“关爱团队”“体谅新人”。</p>
+<p>前端行业就是这样：变，是唯一的不变。今天你还能靠熟练吃饭，明天可能就会被新思路、新工具卷下舞台。拒绝学新东西，说白了，就是自愿退出竞争，直接等着被拍在沙滩上。</p>
+<p>我承认，有时候我也怕折腾，怕累，怕掉队。但如果有一天我变成那个只会守着舒适区、用惰性伪装“情怀”的老古董，我会真心看不起自己。</p>
+<p>说到底，这篇文章写到这里，其实更多是在提醒自己——也希望提醒所有未来的团队新人：</p>
+<p><strong>前端最核心的能力，从来不是你会什么、用什么，而是有没有持续拥抱变化、持续学习、敢于尝试的底气和勇气。</strong></p>
+<blockquote>
+<p>“你能走多远，取决于你能不能在不舒服的状态下继续往前。”</p>
+</blockquote>
+<p><strong>不要让舒适区变成慢性退步区，不要用老经验做挡箭牌。</strong></p>
+<p><strong>做技术的，要敢试错、敢质疑、敢重新开始，也得自己心里一直有点火气。</strong></p>
+<h1 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h1><p>写到这里，已经凌晨一点了。</p>
+<p>说实话，这篇文章一半是给自己发泄用的，另一半也是写给和我一样还在敲代码、折腾技术、纠结选型的兄弟姐妹。</p>
+<p>每次遇到团队争论，搞技术的人其实都挺别扭的——嘴上很刚，心里也会纠结。</p>
+<p>选啥方案其实没绝对对错，但能不能趁早跳出自己的舒适圈、别光会抱怨，这才是拉开差距的地方。</p>
+<p>有时候你卷得不行，可能下次你也会偷懒、想混日子，这都很正常。</p>
+<p>但千万别给自己找太多借口，别等到真被行业淘汰、被新人反超了，才追悔莫及。</p>
+<p>写到这里，和大家共勉：</p>
+<p><strong>别怕争论，也别怕折腾。前端这行真没啥铁饭碗，想安稳混日子还不如早点转行。咱就图个折腾，谁都别当温水里的青蛙。</strong></p>
+<p>今天就这样，困了，该睡了——明天醒来又是新一天，不管选啥栈，咱都还得敲下去。</p>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E9%97%B2%E8%B0%88/" class="category-chain-item">闲谈</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/" class="print-no-link">#前端开发</a>
+      
+        <a href="/tags/%E9%97%B2%E8%B0%88/" class="print-no-link">#闲谈</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>[闲谈]一次团队争论所想到的：技术之外的困境</div>
+      <div>https://imjh.xyz/2025/05/22/dispute-and-think/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>Author</div>
+          <div>blues</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>Posted on</div>
+          <div>May 22, 2025</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>Licensed under</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - Attribution">
+                    <i class="iconfont icon-cc-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2025/05/19/side-effect/" title="别让副作用“爆炸”你的代码！——一次CR后的深度反思">
+                        <span class="hidden-mobile">别让副作用“爆炸”你的代码！——一次CR后的深度反思</span>
+                        <span class="visible-mobile">Next</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>Table of Contents</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Search</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">Keyword</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/5.0.0/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">Blog works best with JavaScript enabled</div>
+  </noscript>
+</body>
+</html>

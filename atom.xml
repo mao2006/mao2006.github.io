@@ -6,7 +6,7 @@
   <link href="https://imjh.xyz/atom.xml" rel="self"/>
   
   <link href="https://imjh.xyz/"/>
-  <updated>2025-05-19T10:44:51.284Z</updated>
+  <updated>2025-05-21T17:09:33.545Z</updated>
   <id>https://imjh.xyz/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>[闲谈]一次团队争论所想到的：技术之外的困境</title>
+    <link href="https://imjh.xyz/2025/05/22/dispute-and-think/"/>
+    <id>https://imjh.xyz/2025/05/22/dispute-and-think/</id>
+    <published>2025-05-21T17:08:00.000Z</published>
+    <updated>2025-05-21T17:09:33.545Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;思考的起点：一场有关技术选型的喧哗&quot;&gt;&lt;a href=&quot;#思考的起点：一场有关技术选型的喧哗&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="闲谈" scheme="https://imjh.xyz/categories/%E9%97%B2%E8%B0%88/"/>
+    
+    
+    <category term="前端开发" scheme="https://imjh.xyz/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="闲谈" scheme="https://imjh.xyz/tags/%E9%97%B2%E8%B0%88/"/>
+    
+  </entry>
   
   <entry>
     <title>别让副作用“爆炸”你的代码！——一次CR后的深度反思</title>
