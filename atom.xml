@@ -6,7 +6,7 @@
   <link href="https://imjh.xyz/atom.xml" rel="self"/>
   
   <link href="https://imjh.xyz/"/>
-  <updated>2025-05-21T17:09:33.545Z</updated>
+  <updated>2025-05-26T03:09:52.813Z</updated>
   <id>https://imjh.xyz/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>内网穿透：让你的项目实时与世界共享</title>
+    <link href="https://imjh.xyz/2025/05/26/Intranet-Penetration-For-Demo/"/>
+    <id>https://imjh.xyz/2025/05/26/Intranet-Penetration-For-Demo/</id>
+    <published>2025-05-26T03:04:00.000Z</published>
+    <updated>2025-05-26T03:09:52.813Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;本文记录了我在腾讯云轻量服务器上部署内网穿透服务，并用脚本 + systemd 实现自动检测端口、自动启动&amp;#x2F;关闭 frpc</summary>
+        
+      
+    
+    
+    
+    <category term="工具" scheme="https://imjh.xyz/categories/%E5%B7%A5%E5%85%B7/"/>
+    
+    
+    <category term="前端开发" scheme="https://imjh.xyz/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="工具" scheme="https://imjh.xyz/tags/%E5%B7%A5%E5%85%B7/"/>
+    
+  </entry>
   
   <entry>
     <title>[闲谈]一次团队争论所想到的：技术之外的困境</title>
