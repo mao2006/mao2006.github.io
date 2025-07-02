@@ -6,7 +6,7 @@
   <link href="https://imjh.xyz/atom.xml" rel="self"/>
   
   <link href="https://imjh.xyz/"/>
-  <updated>2025-05-26T03:09:52.813Z</updated>
+  <updated>2025-07-02T14:19:47.592Z</updated>
   <id>https://imjh.xyz/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>深入理解fetch api(2) --从.json()到流</title>
+    <link href="https://imjh.xyz/2025/07/02/fetch_02/"/>
+    <id>https://imjh.xyz/2025/07/02/fetch_02/</id>
+    <published>2025-07-02T14:19:00.000Z</published>
+    <updated>2025-07-02T14:19:47.592Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;1-前言&quot;&gt;&lt;a href=&quot;#1-前言&quot; class=&quot;headerlink&quot; title=&quot;1. 前言&quot;&gt;&lt;/a&gt;1. 前言&lt;/h1&gt;&lt;p&gt;自从开启这条支线，已经过去大半年了。回想当初，自己连 flex</summary>
+        
+      
+    
+    
+    
+    <category term="网络" scheme="https://imjh.xyz/categories/%E7%BD%91%E7%BB%9C/"/>
+    
+    <category term="前端" scheme="https://imjh.xyz/categories/%E7%BD%91%E7%BB%9C/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="前端开发" scheme="https://imjh.xyz/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+  </entry>
   
   <entry>
     <title>内网穿透：让你的项目实时与世界共享</title>
