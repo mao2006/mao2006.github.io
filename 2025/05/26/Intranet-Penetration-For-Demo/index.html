@@ -22,7 +22,7 @@
     <meta name="description" content="本文记录了我在腾讯云轻量服务器上部署内网穿透服务，并用脚本 + systemd 实现自动检测端口、自动启动&#x2F;关闭 frpc 客户端、实现开机自启的完整过程。适用于前端开发者本地真机调试、远程演示、项目部署等场景。   目录 场景需求与技术选型 frp 内网穿透基础部署 编写自动检测脚本 systemd 开机自启与守护 实战过程常见问题与优化建议 完整工程目录与配置说明 总结与展望">
 <meta property="og:type" content="article">
 <meta property="og:title" content="内网穿透：让你的项目实时与世界共享">
-<meta property="og:url" content="https://imjh.xyz/2025/05/26/Intranet-Penetration-For-Demo/index.html">
+<meta property="og:url" content="https://blog.imjh.xyz/2025/05/26/Intranet-Penetration-For-Demo/index.html">
 <meta property="og:site_name" content="Mai&#39;s blog">
 <meta property="og:description" content="本文记录了我在腾讯云轻量服务器上部署内网穿透服务，并用脚本 + systemd 实现自动检测端口、自动启动&#x2F;关闭 frpc 客户端、实现开机自启的完整过程。适用于前端开发者本地真机调试、远程演示、项目部署等场景。   目录 场景需求与技术选型 frp 内网穿透基础部署 编写自动检测脚本 systemd 开机自启与守护 实战过程常见问题与优化建议 完整工程目录与配置说明 总结与展望">
 <meta property="og:locale" content="en_US">
@@ -73,7 +73,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"imjh.xyz","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"blog.imjh.xyz","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -424,7 +424,7 @@
   <div class="license-box my-3">
     <div class="license-title">
       <div>内网穿透：让你的项目实时与世界共享</div>
-      <div>https://imjh.xyz/2025/05/26/Intranet-Penetration-For-Demo/</div>
+      <div>https://blog.imjh.xyz/2025/05/26/Intranet-Penetration-For-Demo/</div>
     </div>
     <div class="license-meta">
       
